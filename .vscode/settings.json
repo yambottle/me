@@ -1,5 +1,6 @@
 {
     "files.associations": {
-      "*.html": "jekyll"
+      //"*.html": "jekyll"
+      "*.html": "html"
     }
   }
