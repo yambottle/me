@@ -6,4 +6,6 @@ vendor
 
 .DS_Store
 
-.vscode
+# .vscode
+assets/plugins/bootstrap*
+assets/plugins/fontawesome*
