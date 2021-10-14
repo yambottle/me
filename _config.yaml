@@ -20,6 +20,8 @@
 #
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
+host: 127.0.0.1
+port: 4010
 name: Drew Yang
 email: drew.yang.dev@gmail.com
 phone: 214-727-9608

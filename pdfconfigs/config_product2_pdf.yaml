@@ -1,0 +1,17 @@
+# destination: _site/
+# url: "http://127.0.0.1:4010"
+# baseurl: ""
+# port: 4010
+# output: pdf
+# product: product2
+# print_title: Product 2 documentation
+# print_subtitle: version 1.0
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: "pages"
+#     values:
+#       layout: "page_print"
+#       comments: true
+#       search: true
