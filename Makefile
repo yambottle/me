@@ -4,6 +4,6 @@ launch:
 build:
 	jekyll build
 pdf:
-	bash ./pdf-product2.sh
+	bash ${PWD}/bin/pdf-product2.sh
 clean:
 	jekyll clean
