@@ -1,0 +1,29 @@
+$font-size: 10pt;
+
+#printer-content {
+    font-size: $font-size;
+}
+
+.children-center {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.space-between {
+    display: flex; justify-content: space-between;
+}
+
+.content-padding-left{
+    padding-left: 1.5*$font-size;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}

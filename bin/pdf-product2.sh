@@ -5,7 +5,10 @@ bundle exec jekyll serve --detach --config ${PWD}/_config.yaml;
 echo "done";
 
 echo "Building the PDF ...";
-prince --javascript --input-list=${PWD}/_site/pdfconfigs/prince-list.txt -o ${PWD}/resume/drewyang_dev_resume.pdf;
+prince --javascript \
+    --input-list=${PWD}/_site/pdfconfigs/prince-list.txt \
+    --page-margin 5mm \
+    -o ${PWD}/resume/drewyang_dev_resume.pdf;
 echo "done";
 
 echo 'Killing all Jekyll instances'
