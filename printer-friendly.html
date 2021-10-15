@@ -20,9 +20,10 @@ title: Printer Friendly
     <div>
         <h5>Technical Skills</h5>
         <div>- <b>Programming: </b>Python, Java, R, C/C++, HTML/CSS, JavaScript, SQL, Groovy, bash shell, powershell, MATLAB</div>
-        <div>- <b>Python: </b>pandas, scikit-learn, keras, tensorflow, pyspark, matplotlib, plotly, Dash, flask, celery, sqlalchemy, socket</div>
+        <div>- <b>Python: </b>pandas, scikit-learn, keras, tensorflow, pyspark, matplotlib, Plotly Dash, flask, celery, sqlalchemy, socket</div>
         <div>- <b>Storage/Cache: </b>SQL Server, MySQL, MongoDB, Redis, RabbitMQ </div>
-        <div>- <b>Deployment/Pipeline: </b>setuptools, cythonize, Docker, Terraform, SaltStack, Kubernetes, Airflow, MLflow, Jenkins</div>
+        <div>- <b>Pipeline: </b>Airflow, MLflow, Jenkins, Azure Pipeline</div>
+        <div>- <b>Deployment: </b>cythonize, gunicorn, Nginx, Docker, Terraform, SaltStack, Kubernetes(kOps), helmchart</div>
         <div>- <b>AWS: </b>VPC, EC2, RDS, S3, Route53, LoadBalancer, CloudFormation, CloudWatch, Tag Editor</div>
         <div>- <b>Azure: </b>Azure SQL, Storage, Data Lake Gen 2, Data Factory, Data Explorer(Kusto), Azure Function </div>
     </div>
@@ -35,20 +36,21 @@ title: Printer Friendly
             <div>July 2021 - Present</div>
         </div>
         <div class="space-between italic-text">
-            <div>DataJoint - Neuroscience/SciOps</div>
+            <div>DataJoint - Neuroscience/ScienceOperation</div>
             <div>Houston, TX</div>
         </div>
         <div class="content-padding-left">
             <div>
-                <b>* SciOps MATLAB Worker Deployment: </b>AWS MATLAB GPU docker
+                <b class="italic-text">* SciOps Platform DevOps: </b>SciOps enables research teams to organize and automate data operations. I was assigned to work on <b>AWS</b> infrastructure provisioning and deployment using <b>Terraform</b> modules, <b>SaltStack</b> states and <b>Kubernetes kOps</b>
             </div>
             <div>
-                <b>* SciOps System DevOps: </b>AWS Terraform CloudWatch SaltStack docker
+                <b class="italic-text">* SciOps MATLAB Worker Deployment: </b>MATLAB worker is a part of SciOps platform that enables <b>GPU</b>. I focused on building a MATLAB <b>docker</b>, making a <b>docker-cuda</b> environment and deploying it on an <b>EC2</b> instance with GPU.
             </div>
             <div>
-                <b>* Online Workshop Event on JupyterHub: </b>AWS Kubernetes-KOps JupyterHub SeleniemTester docker
+                <b class="italic-text">* Online Workshop on JupyterHub: </b>This is a <b>week-long</b> online workshop that provides a jupyter notebook environment for <b>each</b> audience to complete several coding sessions. I worked on setting up <b>JupterHub</b> using <b>Kubernetes kOps</b> and <b>helmchart</b> on AWS. I also developed a JupyterHub load tester using <b>Selenium</b>.
             </div>
         </div>
+        <br>
 
         <div class="space-between bold-text">
             <div>Data Scientist</div>
@@ -60,28 +62,28 @@ title: Printer Friendly
         </div>
         <div class="content-padding-left">
             <div>
-                <b>* Drilling Analytic Dashboard: </b>This is the first phase of a client project that I worked with a data engineer and another developer. Developed a web application that visualizing the processed data from the Airflow ETL pipeline by using Plotly Dash framework, CSS media query, Redis and sqlalchemy. Also, implemented a socket service pushing a notification from the Airflow server to trigger a process that can synchronize(refresh) the dashboard with the updated data at the end of the ETL pipeline.
+                <b class="italic-text">* Interactive Drilling Dashboard: </b>This is an <b>enterprise</b> product that I worked with two more engineers. Developed a <b>Plotly Dash</b> dashboard that visualizes processed data using Bootstrap, CSS media query, <b>Redis</b> and sqlalchemy. Also, implemented a <b>socket</b> service will notify when <b>Airflow</b> pipeline finished processing in order to <b>synchronize</b>(refresh) the dashboard's data.
             </div>
             <div>
-                <b>* CI/CD Pipeline: </b>Set up a Jenkins server working with Azure DevOps for continuous development, testing and continuous deployment. Additionally, made a Jenkins pipeline in Linux shell scripts to work with on-premise infrastructures and several Azure Pipelines in powershell to work with Azure resources.
+                <b class="italic-text">* CI/CD Pipeline: </b>Set up several <b>Azure Pipelines</b> for continuous development, testing and continuous deployment in <b>dev, test and prod</b> stages. Additionally, made a <b>Jenkins</b> pipeline to work with on-premise infrastructures.
             </div>
             <div>
-                <b>* ML Pipeline: </b>Set up a MLflow server for machine learning experiment logging, parameter tuning, continuous training, model management and model serving.
+                <b class="italic-text">* ML Pipeline: </b>Set up a <b>MLflow</b> server for machine learning experiment logging, parameter tuning, continuous training, model management and model serving.
             </div>
             <div>
-                <b>* ETL Pipeline: </b>Working with a data engineer, set up an Airflow server for our data ETL pipeline using Docker, miniconda and AWS EC2.
+                <b class="italic-text">* ETL Pipeline: </b>Working with a data engineer, set up an <b>Airflow</b> server for our data ETL pipeline.
             </div>
             <div>
-                <b>* Prediction Task Web Manager: </b>Working with a front-end developer, designed and developed a production level web application that supports job queuing and parallel processing for drilling speed prediction using JavaScript, flask, sqlalchemy, celery, RabbitMQ, gunicorn, Nginx, supervisord, Docker and AWS EC2, AWS Cognito Authentication, HTTPS
+                <b class="italic-text">* Prediction Task Manager: </b>Working with a front-end developer, designed and developed a <b>production</b> web application that supports job queuing and parallel processing for drilling speed prediction using JavaScript, <b>flask</b>, sqlalchemy, <b>celery</b>, RabbitMQ, gunicorn, Nginx, supervisord, Docker and AWS EC2, AWS Cognito Authentication, HTTPS
             </div>
             <div>
-                <b>* Drilling Status Detection: </b>Working with a domain expert, developed two classification models for detecting drilling status using Logistic Regression and Random Forest with the convenience of the MLflow server
+                <b class="italic-text">* Drilling Status Detection: </b>Working with a domain expert, developed two <b>classification</b> models for detecting drilling status using Logistic Regression and Random Forest with the convenience of the MLflow server
             </div>
             <div>
-                <b>* Drilling Speed Prediction: </b>Working with a domain expert, applied Gaussian Process Regression for feature synthesis based on geographical information as well as feature engineering based on correlation matrix and F1 score ranking, built a non-linear regression model using LSTM RNN.
+                <b class="italic-text">* Drilling Speed Prediction: </b>Working with a domain expert, applied Gaussian Process <b>Regression</b> for feature synthesis based on geographical information as well as <b>feature engineering</b> based on correlation matrix and F1 score ranking, built a non-linear regression model using LSTM RNN.
             </div>
             <div>
-                <b>* Image Classification: </b>This is a short-term client project that I worked with a senior data scientist. Applied k-Means clustering for optimizing training data labeling, then made a classification model for oil pump failure detection using Random Forest and CNN.
+                <b class="italic-text">* Image Classification: </b>This is a short-term <b>client</b> project that I worked with a senior data scientist. Applied k-Means clustering to <b>help</b> manual data labeling, then made a <b>classification</b> model for oil pump failure detection using Random Forest and CNN.
             </div>
         </div>
 
