@@ -18,8 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/me" # the subpath of your site, e.g. /blog
+# url: "https://127.0.0.1" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://yambottle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 host: 127.0.0.1
 port: 4010
 name: Drew Yang
@@ -27,7 +28,7 @@ email: drew.yang.dev@gmail.com
 phone: 214-727-9608
 location: Houston, TX
 linkedin: https://www.linkedin.com/in/drewyang/
-github: https://drewyang.github.io
+github: https://yambottle.github.io/me/
 
 # Build settings
 encoding: "utf-8"
