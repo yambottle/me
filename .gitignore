@@ -7,5 +7,3 @@ vendor
 .DS_Store
 
 # .vscode
-assets/plugins/bootstrap*
-assets/plugins/fontawesome*
