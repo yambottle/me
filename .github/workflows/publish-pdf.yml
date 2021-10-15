@@ -16,9 +16,9 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: resume/*.pdf
+          file: target/release/resume/*.pdf
           overwirte: true
-#           asset_name: mything
+#           asset_name: drewyang_dev_resume
           tag: ${{ github.ref }}
 #           overwrite: true
 #           body: "This is my release text"
