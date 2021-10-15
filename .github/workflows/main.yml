@@ -10,8 +10,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
-      - name: Build
-        run: cargo build --release
+#       - name: Build
+#         run: cargo build --release
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
