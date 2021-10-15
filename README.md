@@ -1,5 +1,11 @@
 # Drew Yang's Github Page
 
+## Intro
+Made a Github Page repo in order to use one single data.yaml file to generate a printer-friendly resume in PDF as well as a personal website at the same time.
+
+## Tutorial
+TODO - Will be documented when finished!
+
 ## Some Research on Jekyll Exporting PDF
 - Prince xml:
     - Since this use case is just exporting one pdf. Generally this works very well, but just can't work with bootstrap and fontawesome. Another down side is Prince xml free license will add a `P` logo at the file's top right corner, which is fine to me in this case.
