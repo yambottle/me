@@ -17,7 +17,7 @@
 }
 
 #underlay-bg-left:hover {
-    background-image: url("../images/index-left.png");
+    background-image: url($baseurl+"/assets/images/index-left.png");
     background-size: cover;
 }
 
@@ -31,7 +31,7 @@
 }
 
 #underlay-bg-right:hover {
-    background-image: url("../images/index-right.png");
+    background-image: url($baseurl+"/assets/images/index-right.png");
     background-size: cover;
 }
 
