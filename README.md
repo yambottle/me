@@ -1,13 +1,15 @@
-# Drew Yang's Github Page
+# Drew Yang's Github Page - WIP
 
-[![Resume Published In Release](https://github.com/Yambottle/me/actions/workflows/publish-pdf.yml/badge.svg)](https://github.com/Yambottle/me/actions/workflows/publish-pdf.yml)
+[![Resume Published In Release](https://github.com/yambottle/me/actions/workflows/publish-pdf.yml/badge.svg)](https://github.com/yambottle/me/actions/workflows/publish-pdf.yml)
 
 ## Intro
 Made a Github Page repo in order to use one single data.yaml file to generate a printer-friendly resume in PDF as well as a personal website at the same time.
 
 
 ## Tutorial
-TODO - Will be documented when finished!
+- Set up Jekyll from [here](https://jekyllrb.com/docs/)
+- Set up Prince from [here](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_generating_pdfs.html#1-set-up-prince)
+- Follow the project root directory `Makefile`
 
 
 ## Github Action
