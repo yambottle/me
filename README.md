@@ -1,6 +1,6 @@
 # Drew Yang's Github Page - WIP
 
-[![Resume Published In Release](https://github.com/yambottle/me/actions/workflows/publish-pdf.yml/badge.svg)](https://github.com/yambottle/me/actions/workflows/publish-pdf.yml)
+![Release Resume](https://github.com/yambottle/me/actions/workflows/publish-pdf.yml/badge.svg)
 
 ## Intro
 Made a Github Page repo in order to use one single data.yaml file to generate a printer-friendly resume in PDF as well as a personal website at the same time.
