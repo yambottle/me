@@ -2,13 +2,13 @@ on:
   push:
     # Sequence of patterns matched against refs/tags
     tags:
-    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+    - 'v*.*.*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
-name: Resume Published In Release
+name: release_resume
 
 jobs:
-  build:
-    name: Resume Published In Release
+  release_resume:
+    name: Release Resume
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -26,7 +26,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-      - name: Resume Published In Release
+      - name: Add Resume To Release
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
         env:
