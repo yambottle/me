@@ -4,25 +4,38 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
+
 #underlay-bg-left {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 50%;
-    z-index: -1;
+    z-index: 1;
 }
+
+#underlay-bg-left:hover {
+    background-image: url("../images/index-left.png");
+    background-size: cover;
+}
+
 #underlay-bg-right {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 50%;
     right: 0;
-    z-index: -1;
+    z-index: 1;
+}
+
+#underlay-bg-right:hover {
+    background-image: url("../images/index-right.png");
+    background-size: cover;
 }
 
 .index-btn {
     width: 200px;
+    z-index: 2;
 }

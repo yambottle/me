@@ -21,5 +21,21 @@ title: Normal Webpage
     <h1>Stay tuned</h1>
   
     <p><strong>Still under construction :)</strong></p>
-    <p>Will be available very soon!</p>
+    <p>Will redirect you to my github page in <span id="time"></span>...</p>
+    <script>
+      function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
+      async function redirect() {
+          for (let i = 5; i >0 ; i--) {
+              document.getElementById("time").innerHTML = i;
+              console.log(`Waiting 1 seconds...`);
+              await sleep(1000);
+          }
+          location.replace('https://github.com/yambottle');
+      }
+      
+      redirect();
+    </script>
   </div>
