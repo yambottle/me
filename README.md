@@ -8,6 +8,13 @@ Made a Github Page repo in order to use one single data.yaml file to generate a 
 
 ## Tutorial
 - Set up Jekyll from [here](https://jekyllrb.com/docs/)
+    - MacOS: 
+        - Ruby has to be 3.1.X: 
+            - `brew install ruby@3.1`
+            - `echo 'export PATH="/usr/local/opt/ruby@3.1/bin:$PATH"' >> ~/.zshrc`
+        - Get gem executable directory by `gem env`
+            - `echo 'export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"' >> ~/.zshrc`
+    - Ruby 3.0.0+: `bundle add webrick` + `bundle clean --force`
 - Set up Prince from [here](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_generating_pdfs.html#1-set-up-prince)
 - Follow the project root directory `Makefile`
 

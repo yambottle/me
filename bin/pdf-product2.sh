@@ -8,7 +8,7 @@ echo "Building the PDF ...";
 prince --javascript \
     --input-list=${PWD}/_site/pdfconfigs/prince-list.txt \
     --page-margin 5mm \
-    -o ${PWD}/resume/drewyang_dev_resume.pdf;
+    -o ${PWD}/resume/drewyang_resume.pdf;
 echo "done";
 
 echo 'Killing all Jekyll instances'

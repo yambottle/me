@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 #
 baseurl: "/me" # the subpath of your site, e.g. /blog
-# url: "https://127.0.0.1" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://yambottle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://127.0.0.1" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://yambottle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 host: 127.0.0.1
 port: 4010
 name: Drew Yang
