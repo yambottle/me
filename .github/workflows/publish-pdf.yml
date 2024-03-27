@@ -36,6 +36,6 @@ jobs:
           # asset_path: ./my-artifact.zip
           # asset_name: my-artifact.zip
           # asset_content_type: application/zip
-          asset_path: ./resume/drewyang_dev_resume.pdf
-          asset_name: drewyang_dev_resume.pdf
+          asset_path: ./resume/drewyang_resume.pdf
+          asset_name: drewyang_resume.pdf
           asset_content_type: application/pdf
