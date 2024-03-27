@@ -1,0 +1,41 @@
+---
+layout: default
+title: Normal Webpage
+---
+
+<style type="text/css" media="screen">
+    .container {
+      margin: 10px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    h1 {
+      margin: 30px 0;
+      font-size: 4em;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+  </style>
+  
+  <div class="container">
+    <h1>Stay tuned</h1>
+  
+    <p><strong>Still under construction :)</strong></p>
+    <p>Will redirect you to my github page in <span id="time"></span>...</p>
+    <script>
+      function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
+      async function redirect() {
+          for (let i = 5; i >0 ; i--) {
+              document.getElementById("time").innerHTML = i;
+              console.log(`Waiting 1 seconds...`);
+              await sleep(1000);
+          }
+          location.replace('https://github.com/yambottle');
+      }
+      
+      redirect();
+    </script>
+  </div>

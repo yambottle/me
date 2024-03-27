@@ -17,15 +17,18 @@ title: Raw Resume
     </div>
     <hr>
 
-    <div>
+    <div style="width: 100%;">
         <h5>Technical Skills</h5>
-        <div>- <b>Programming Languages: </b>Python, bash, SQL, Markdown, Groovy, powershell, Java, R, HTML/CSS, JavaScript, C/C++</div>
-        <div>- <b>Continuous Integration/Deployment: </b>Github Actions, Azure DevOps, Jenkins, ArgoCD</div>
-        <div>- <b>Infrastructure as Code: </b>AWS, Azure, Terraform, Packer, Ansible</div>
-        <div>- <b>Configuration Management: </b>cloud-init, SaltStack</div>
-        <div>- <b>Containerization: </b>Docker, Podman, Kubernetes(kOps, kubectl, helm), Dev Container</div>
-        <div>- <b>Monitoring: </b>OpenTelemetry, CloudWatch, Datadog, Grafana</div>
-        <div>- <b>Workflow Orchestration: </b>Flyte, MLflow, Airflow</div>
+        <div style="width: 50%;float: left;">
+            <div>- <b>Code: </b>Python, bash, SQL, Markdown, powershell, Java, C/C++</div>
+            <div>- <b>CI/CD: </b>Github Actions, Azure DevOps, Jenkins, ArgoCD</div>
+            <div>- <b>Cloud/IaC: </b>AWS, Azure, Terraform, Packer, Ansible</div>
+        </div>
+        <div style="width: 50%;margin-left: 50%;">
+            <div>- <b>Config: </b>cloud-init, SaltStack</div>
+            <div>- <b>Container: </b>Docker, Podman, Kubernetes(kOps, kubectl, helm)</div>
+            <div>- <b>Observability: </b>OpenTelemetry, CloudWatch, Datadog, Grafana</div>
+        </div>
     </div>
     <hr>
 
@@ -36,34 +39,49 @@ title: Raw Resume
             <div>July 2021 - Present</div>
         </div>
         <div class="space-between italic-text">
-            <div>DataJoint - Science Operation for neuroscientist. [<a href="https://github.com/datajoint">Opensource</a>] and [<a href="https://datajoint.com/works">Commercial</a>]</div>
+            <div>DataJoint - Science Operation for Neuroscience. [<a href="https://github.com/datajoint">Open-source</a>] and [<a href="https://datajoint.com/works">Commercial</a>]</div>
             <div>Houston, TX</div>
         </div>
         <div class="content-padding-left">
             <div>
-                <b class="italic-text">* CI/CD: </b>Developed generic <b>Github Action</b> reusable workflows for <b>30+</b> repositories to automate Python packages and Docker images build, test, release/publish 
+                <b class="italic-text">* AWS:</b> Administrated the company's AWS account and several other customers' AWS accounts. Configured <b>VPC</b>, <b>Subnet</b>, <b>Security Groups</b>, <b>IAM</b> role and policies, <b>S3</b> lifecycle management, <b>EFS</b> access point, <b>EC2</b> instances, <b>RDS</b> instances, <b>Lambda</b> triggered by <b>SQS</b> or <b>EventBridge</b>, <b>SNS</b> and <b>SES</b>, <b>CloudWatch</b> metrics and alarms, <b>Route 53</b> DNS records, <b>Secrets Manager</b> for deployment secrets.
             </div>
             <div>
-                <b class="italic-text">* SciOps Kubernetes Cluster: </b>Setting up and maintaining <b>Kubernetes</b> clusters for dev/test/production using <b>kOps and k3d</b>; configuring Nginx ingress controller, let's encrypt cert manager, Cillium Container Network Interface(CNI); deploying JupyterHub, flask, ReactJS, etc. using <b>helm</b> or <b>kubectl</b>
+                <b class="italic-text">* CI/CD: </b> Developed generic <b>Github Actions</b> reusable workflows used by <b>30+</b> repositories followed by <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a>, <a href="https://learn.microsoft.com/en-us/devops/develop/how-microsoft-develops-devops">Release Flow</a> and <a href="https://opengitops.dev/">GitOps</a> best practices, to automate build, test, release, publish private or open-source <b>Python</b> packages[<a href="https://pypi.org/search/?q=datajoint">PyPI</a>] or deploy <b>Docker</b> images[<a href="https://hub.docker.com/u/datajoint">Dockerhub</a>].
             </div>
             <div>
-                <b class="italic-text">* SciOps Worker Clusters: </b>Configuring <b>Terraform</b>, <b>cloud-init</b> and <b>SaltStack</b> to provision CPU and GPU(<b>Nvidia/CUDA</b>) workers in different scales as needed
+                <b class="italic-text">* Kubernetes: </b> Provisioned Kubernetes clusters for development, staging and production environments using <b>k3d or kOps</b>. Developed utility <b>bash</b> scripts with <b>helm</b> and <b>kubectl</b> to manage Kubernetes clusters more efficiently, including configuring <b>Nginx ingress</b> controller, cert manager with <b>Let's encrypt</b> issuer, <b>Cillium</b> Container Network Interface(CNI), IAM Roles for Service Account(<b>IRSA</b>), <b>Cluster Autoscaler</b>, AWS Elastic Load Balancer(<b>ELB</b>) or deploying applications like Percona XtraDB Clusters, Keycloak, JupyterHub, Flask and ReactJS based web application, etc.
             </div>
             <div>
-                <b class="italic-text">* SciOps Operation Automation: </b>Automating SciOps operations such as onboarding new customers, managing customers' permission, generating usage and billing report, etc. using <b>Python</b>, <b>SQL</b> and <b>bash</b>
+                <b class="italic-text">* Ephemeral Worker Clusters: </b> Designed and developed a worker lifecycle manager using Python in about a month to fulfill an <b>urgent</b> business requirement. This development <b>polls</b> jobs from a MySQL database, then provisions and configures ephemeral EC2 instances by <b>Packer(pre-build AMI), Terraform and cloud-init</b> to compute jobs <b>at scale</b>; implemented AWS S3 mount to significantly reduce raw data downloading <b>overhead</b> and added EFS as a file cache for intermediate steps to improve computation <b>failover</b>; configured <b>NVIDIA CUDA toolkit</b> and <b>NVIDIA container runtime</b> for <b>GPU</b> workers.
+            </div>
+            <div>
+                <b class="italic-text">* Platform Automation: </b> To provision or terminate AWS resources using <b>boto3</b> or <b>Terraform</b>; manage customers' <b>RBAC</b> permissions using Keycloak and Github REST API; generating usage and billing report with <b>AWS S3 Inventory</b> report, <b>AWS CloudTrail</b> and <b>AWS Cost and Usage</b> report, made a <b>Plotly Dash</b> to analyze cost and usage efficiency.
+            </div>
+            <div>
+                <b class="italic-text">* Jupyterhub: </b> Configured and maintained Jupyterhub deployment on a Kubernetes cluster with <b>Node Affinity</b> to assign pods onto different nodes by requirements and <b>Cluster Autoscaler</b> along with <b>AWS Auto Scaling Group</b> to accommodate <b>100+</b> active users; improved base images' <b>build time</b> and maintenance <b>overhead</b>.  
+            </div>
+            <div>
+                <b class="italic-text">* Observability:</b> Implemented small part of the metrics and alerts using <b>AWS CloudWatch</b>, and then later integrated <b>Datadog</b> for Kubernetes clusters' and ephemeral EC2 instances' metrics and logging through <b>OpenTelemetry</b> protocol, synthetic API testing, UI/UX monitoring.
+            </div>
+            <div>
+                <b class="italic-text">* Security:</b> Set up codebase <b>vulnerability</b> scan with FOSSA; Set up <b>AWS Secrets Manager</b> working with <b>External Secret Store Operator</b> to secure Kubernetes secrets; Deployed and administrated self-hosted <b>Keycloak</b> for <b>RABC</b> authentication, further integrate it with <b>AWS IAM</b> as an <b>identity provider</b> to access AWS resources through <b>STS</b>, learned about OpenID Connect(<b>OIDC</b>) authentication flow such as authorization code flow, client credential flow, password grant flow etc.
+            </div>
+            <div>
+                <b class="italic-text">* MySQL Database:</b> Maintained a self-hosted <b>Percona XtraDB Clusters</b> on database <b>daily backup</b> stored on <b>S3</b>, <b>mysqldump</b> backup redundancy, Point-in-Time Recovery(<b>PITR</b>), <b>deadlock</b> detection, slow query log. 
             </div>
         </div>
-        <br>
+        <!-- <br> -->
 
         <div class="space-between bold-text">
             <div>Software Engineer(MLOps)</div>
             <div>May 2019 - July 2021</div>
         </div>
         <div class="space-between italic-text">
-            <div>dataVediK - Optimize Oil & Gas operations by Machine Learning. [<a href="https://www.agoraiot.com/marketplace/drillvedik">DrillVedik</a>]</div>
+            <div>dataVediK - Optimize Oil & Gas operations by Machine Learning. [<a href="https://www.agoraiot.com/marketplace/drillvedik">DrillVedik</a>] [<a href="https://www.linkedin.com/in/drewyang/">Details on LinkedIn</a>]</div>
             <div>Houston, TX</div>
         </div>
-        <div class="content-padding-left">
+        <!-- <div class="content-padding-left">
             <div>
                 <b class="italic-text">* Interactive Drilling Dashboard: </b>This is an <b>enterprise</b> product that I worked with two more engineers. Developed a <b>Plotly Dash</b> dashboard that visualizes processed data using Bootstrap, CSS media query, <b>Redis</b> and sqlalchemy. Also, implemented a <b>socket</b> service will notify when <b>Airflow</b> pipeline finished processing in order to <b>synchronize</b>(refresh) the dashboard's data.
             </div>
@@ -85,27 +103,27 @@ title: Raw Resume
             <div>
                 <b class="italic-text">* Drilling Speed Prediction: </b>Working with a domain expert, applied Gaussian Process <b>Regression</b> for feature synthesis based on geographical information as well as <b>feature engineering</b> based on correlation matrix and F1 score ranking, built a non-linear regression model using LSTM RNN.
             </div>
-        </div>
+        </div> -->
     </div>
     <hr>
 
     <div>
         <h5>Education</h5>
-        <div class="space-between bold-text">
-            <div>Southern Methodist University</div>
-            <div>Aug 2017 - May 2019</div>
+        <div class="space-between">
+            <div>Southern Methodist University, <i>Master's of Computer Science</i></div>
+            <div>Dallas, TX | Aug 2017 - May 2019</div>
         </div>
         <div class="space-between italic-text">
-            <div>Master's of Computer Science</div>
-            <div>Dallas, TX</div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="space-between bold-text">
-            <div>Qingdao University</div>
-            <div>Aug 2013 - May 2017</div>
+        <div class="space-between">
+            <div>Qingdao University, <i>Bachelor's of Software Engineering</i></div>
+            <div>Qingdao, China | Aug 2013 - May 2017</div>
         </div>
         <div class="space-between italic-text">
-            <div>Bachelor's of Software Engineering</div>
-            <div>Qingdao, China</div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 </div>

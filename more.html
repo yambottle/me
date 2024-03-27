@@ -1,41 +1,359 @@
 ---
 layout: default
-title: Normal Webpage
+title: More
 ---
+<!-- Timeline component referenced from: https://codepen.io/alvarotrigo/pen/ExwYyNW -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>More</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style type="text/css" media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *, html,body{
+      padding:0px;
+      margin:0px;
+      box-sizing:border-box;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      perspective:800px;
+    }
+    body{
+      background-color:#227093;
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .timeline{
+      width:800px;
+      background-color:#072736;
+      color:#fff;
+      padding:30px 20px;
+      box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    }
+    .timeline ul{
+      list-style-type:none;
+      border-left:2px solid #094a68;
+      padding:10px 5px;
+    }
+    .timeline ul li{
+      padding:20px 20px;
+      position:relative;
+      cursor:pointer;
+      transition:.5s;
+    }
+    .timeline ul li span{
+      display:inline-block;
+      background-color:#1685b8;
+      border-radius:25px;
+      padding:2px 5px;
+      font-size:15px;
+      text-align:center;
+    }
+    .timeline ul li .content h3{
+      color:#34ace0;
+      font-size:17px;
+      padding-top:5px;
+    }
+    .timeline ul li .content p{
+      padding:5px 0px 15px 0px;
+      font-size:15px;
+    }
+    .timeline ul li:before{
+      position:absolute;
+      content:'';
+      width:10px;
+      height:10px;
+      background-color:#34ace0;
+      border-radius:50%;
+      left:-11px;
+      top:28px;
+      transition:.5s;
+    }
+    .timeline ul li:hover{
+      background-color:#071f2a;
+    }
+    .timeline ul li:hover:before{
+      background-color:#0F0;
+      box-shadow:0px 0px 10px 2px #0F0;
+    }
+    @media (max-width:300px){
+      .timeline{
+        width:100%;
+        padding:30px 5px 30px 10px;
+      }
+      .timeline ul li .content h3{
+        color:#34ace0;
+        font-size:15px;
+      }
+    
+    }
 
-<style type="text/css" media="screen">
-    .container {
-      margin: 10px auto;
-      max-width: 600px;
+    .profile {
       text-align: center;
     }
-    h1 {
-      margin: 30px 0;
-      font-size: 4em;
-      line-height: 1;
-      letter-spacing: -1px;
+    .headshot {
+      border-radius: 50%;
+      width: 30%;
+      height: auto;
     }
   </style>
-  
-  <div class="container">
-    <h1>Stay tuned</h1>
-  
-    <p><strong>Still under construction :)</strong></p>
-    <p>Will redirect you to my github page in <span id="time"></span>...</p>
-    <script>
-      function sleep(ms) {
-          return new Promise(resolve => setTimeout(resolve, ms));
-      }
-      
-      async function redirect() {
-          for (let i = 5; i >0 ; i--) {
-              document.getElementById("time").innerHTML = i;
-              console.log(`Waiting 1 seconds...`);
-              await sleep(1000);
-          }
-          location.replace('https://github.com/yambottle');
-      }
-      
-      redirect();
-    </script>
+</head>
+<body>
+  <div class="timeline">
+    <div class="profile">
+      <!-- <img class="headshot" src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/032cf3e4a6a5fa83f4f76c481d658188/562e442594edc6f30bc4fa1b_rw_600.jpg?h=ad3aaffba1ac7e48d30cdfba2911ea49" alt="Profile Picture"> -->
+      <img class="headshot" src="https://media.licdn.com/dms/image/C5603AQE6cMeEW8ZpVA/profile-displayphoto-shrink_400_400/0/1517496561507?e=1717027200&v=beta&t=j_I3aOmIA9FAZfvKk8UKEKtAKPgXXk77nNkjxxPsA48" alt="Profile Picture">
+      <h2>Drew Yang</h2>
+      <div>DevOps Engineer</div>
+    </div>
+    <br>
+
+    <div>
+      <p></p>
+    </div>
+    <br>
+
+    <div>
+      <div>- <b>Programming Languages: </b>Python, bash, SQL, powershell, Java, R, HTML/CSS, JavaScript, C/C++</div>
+      <div>- <b>Continuous Integration/Deployment: </b>Github Actions, Azure DevOps, Jenkins, ArgoCD</div>
+      <div>- <b>Infrastructure as Code: </b>AWS, Azure, Terraform, Packer, Ansible</div>
+      <div>- <b>Configuration Management: </b>cloud-init, SaltStack</div>
+      <div>- <b>Containerization: </b>Docker, Podman, Kubernetes(kOps, kubectl, helm), Dev Container</div>
+      <div>- <b>Monitoring: </b>OpenTelemetry, CloudWatch, Datadog, Grafana</div>
+      <div>- <b>Workflow Orchestration: </b>Flyte, MLflow, Airflow</div>
+    </div>
+    <br>
+
+    <ul>
+      <li>
+        <span>July 2021 - Present</span>
+        <div class="content">
+          <h3>Software Engineer(DevOps) - DataJoint</h3>
+          <div>
+            <b class="italic-text">Company's [<a href="https://github.com/datajoint">Open-source Github</a>] and [<a href="https://datajoint.com/works">Commercialized Product</a>]
+          </div>
+          <div>
+            <b class="italic-text">* AWS:</b> Administrated the company's AWS account and several other customers' AWS accounts. Configured <b>VPC</b>, <b>Subnet</b>, <b>Security Groups</b>, <b>IAM</b> role and policies, <b>S3</b> lifecycle management, <b>EFS</b> access point, <b>EC2</b> instances, <b>RDS</b> instances, <b>Lambda</b> triggered by <b>SQS</b> or <b>EventBridge</b>, <b>SNS</b> and <b>SES</b>, <b>CloudWatch</b> metrics and alarms, <b>Route 53</b> DNS records, <b>Secrets Manager</b> for deployment secrets.
+          </div>
+          <div>
+              <b class="italic-text">* CI/CD: </b> Developed generic <b>Github Actions</b> reusable workflows used by <b>30+</b> repositories followed by <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a>, <a href="https://learn.microsoft.com/en-us/devops/develop/how-microsoft-develops-devops">Release Flow</a> and <a href="https://opengitops.dev/">GitOps</a> best practices, to automate build, test, release, publish private or open-source <b>Python</b> packages[<a href="https://pypi.org/search/?q=datajoint">PyPI</a>] or deploy <b>Docker</b> images[<a href="https://hub.docker.com/u/datajoint">Dockerhub</a>].
+          </div>
+          <div>
+              <b class="italic-text">* Kubernetes: </b> Provisioned Kubernetes clusters for development, staging and production environments using <b>k3d or kOps</b>. Developed utility <b>bash</b> scripts with <b>helm</b> and <b>kubectl</b> to manage Kubernetes clusters more efficiently, including configuring <b>Nginx ingress</b> controller, cert manager with <b>Let's encrypt</b> issuer, <b>Cillium</b> Container Network Interface(CNI), IAM Roles for Service Account(<b>IRSA</b>), <b>Cluster Autoscaler</b>, AWS Elastic Load Balancer(<b>ELB</b>) or deploying applications like Percona XtraDB Clusters, Keycloak, JupyterHub, Flask and ReactJS based web application, etc.
+          </div>
+          <div>
+              <b class="italic-text">* Ephemeral Worker Clusters: </b> Designed and developed a worker lifecycle manager using Python in about a month to fulfill an <b>urgent</b> business requirement. This development <b>polls</b> jobs from a MySQL database, then provisions and configures ephemeral EC2 instances by <b>Packer(pre-build AMI), Terraform and cloud-init</b> to compute jobs <b>at scale</b>; implemented AWS S3 mount to significantly reduce raw data downloading <b>overhead</b> and added EFS as a file cache for intermediate steps to improve computation <b>failover</b>; configured <b>NVIDIA CUDA toolkit</b> and <b>NVIDIA container runtime</b> for <b>GPU</b> workers.
+          </div>
+          <div>
+              <b class="italic-text">* Platform Automation: </b> To provision or terminate AWS resources using <b>boto3</b> or <b>Terraform</b>; manage customers' <b>RBAC</b> permissions using Keycloak and Github REST API; generating usage and billing report with <b>AWS S3 Inventory</b> report, <b>AWS CloudTrail</b> and <b>AWS Cost and Usage</b> report, made a <b>Plotly Dash</b> to analyze cost and usage efficiency.
+          </div>
+          <div>
+              <b class="italic-text">* Jupyterhub: </b> Configured and maintained Jupyterhub deployment on a Kubernetes cluster with <b>Node Affinity</b> to assign pods onto different nodes by requirements and <b>Cluster Autoscaler</b> along with <b>AWS Auto Scaling Group</b> to accommodate <b>100+</b> active users; improved base images' <b>build time</b> and maintenance <b>overhead</b>.  
+          </div>
+          <div>
+              <b class="italic-text">* Observability:</b> Implemented small part of the metrics and alerts using <b>AWS CloudWatch</b>, and then later integrated <b>Datadog</b> for Kubernetes clusters' and ephemeral EC2 instances' metrics and logging through <b>OpenTelemetry</b> protocol, synthetic API testing, UI/UX monitoring.
+          </div>
+          <div>
+              <b class="italic-text">* Security:</b> Set up codebase <b>vulnerability</b> scan with FOSSA; Set up <b>AWS Secrets Manager</b> working with <b>External Secret Store Operator</b> to secure Kubernetes secrets; Deployed and administrated self-hosted <b>Keycloak</b> for <b>RABC</b> authentication, further integrate it with <b>AWS IAM</b> as an <b>identity provider</b> to access AWS resources through <b>STS</b>, learned about OpenID Connect(<b>OIDC</b>) authentication flow such as authorization code flow, client credential flow, password grant flow etc.
+          </div>
+          <div>
+              <b class="italic-text">* MySQL Database:</b> Maintained a self-hosted <b>Percona XtraDB Clusters</b> on database <b>daily backup</b> stored on <b>S3</b>, <b>mysqldump</b> backup redundancy, Point-in-Time Recovery(<b>PITR</b>), <b>deadlock</b> detection, slow query log. 
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>May 2019 - July 2021</span>
+        <div class="content">
+          <h3>Software Engineer(MLOps) - dataVediK</h3>
+          <div>
+            <b class="italic-text">Company's commercialized product [<a href="https://www.agoraiot.com/marketplace/drillvedik">DrillVedik</a>]
+          </div>
+          <div>
+            <b class="italic-text">* Interactive Drilling Dashboard: </b>This is an <b>enterprise</b> product that I worked with two more engineers. Developed a <b>Plotly Dash</b> dashboard that visualizes processed data using Bootstrap, CSS media query, <b>Redis</b> and sqlalchemy. Also, implemented a <b>socket</b> service will notify when <b>Airflow</b> pipeline finished processing in order to <b>synchronize</b>(refresh) the dashboard's data.
+          </div>
+          <div>
+              <b class="italic-text">* CI/CD Pipeline: </b>Set up several <b>Azure Pipelines</b> for continuous development, testing and continuous deployment in <b>dev, test and prod</b> stages. Additionally, made a <b>Jenkins</b> pipeline to work with on-premise infrastructures.
+          </div>
+          <div>
+              <b class="italic-text">* ML Pipeline: </b>Set up a <b>MLflow</b> server for machine learning experiment logging, parameter tuning, continuous training, model management and model serving.
+          </div>
+          <div>
+              <b class="italic-text">* ETL Pipeline: </b>Working with a data engineer, set up an <b>Airflow</b> server for our data ETL pipeline.
+          </div>
+          <div>
+              <b class="italic-text">* Prediction Task Manager: </b>Working with a front-end developer, designed and developed a <b>production</b> web application that supports job queuing and parallel processing for drilling speed prediction using JavaScript, <b>flask</b>, sqlalchemy, <b>celery</b>, RabbitMQ, gunicorn, Nginx, supervisord, Docker and AWS EC2, AWS Cognito Authentication, HTTPS
+          </div>
+          <div>
+              <b class="italic-text">* Drilling Status Detection: </b>Working with a domain expert, developed two <b>classification</b> models for detecting drilling status using Logistic Regression and Random Forest with the convenience of the MLflow server
+          </div>
+          <div>
+              <b class="italic-text">* Drilling Speed Prediction: </b>Working with a domain expert, applied Gaussian Process <b>Regression</b> for feature synthesis based on geographical information as well as <b>feature engineering</b> based on correlation matrix and F1 score ranking, built a non-linear regression model using LSTM RNN.
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>May 2019</span>
+        <div class="content">
+          <h3>Graduated Master of Computer Science - Southern Methodist University</h3>
+        </div>
+      </li>
+      <li>
+        <span>Mar 2019 - May 2019</span>
+        <div class="content">
+          <h3>Guest Promotion Management App - Android Developer @ BLOX Group</h3>
+          <div>
+              <b class="italic-text">* Company: startup
+          </div>
+          <div>
+            <b class="italic-text">* User: potential
+          </div>
+          <div>
+            <b class="italic-text">* Duties: Implemented layouts, activities, customized widgets, screen adaption
+          </div>
+          <div>
+            <b class="italic-text">* Gains: Git Version control, Android updated version features, more customized widgets
+          </div>
+          <div>
+            <b class="italic-text">* Self assessment: it's good to work remotely in a professional team included designers and developers, however, I still need more understanding in an entire software development lifecycle, not just coding.
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>Sept 2018 - Dec 2018</span>
+        <div class="content">
+          <h3>Hospitalization Data Mining - Course Project</h3>
+          <div>
+              <b class="italic-text">
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>Apr 2018 - May 2018</span>
+        <div class="content">
+          <h3>Web Crawler and Search Engine - Course Project</h3>
+          <div>
+              <b class="italic-text">
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>Feb 2018 - May 2019</span>
+        <div class="content">
+          <h3>Teaching Assistant - Southern Methodist University</h3>
+          <div>
+              <b class="italic-text">* Supervisor: Dr. Frank Coyle
+          </div>
+          <div>
+            <b class="italic-text">* CSE 3342 Undergrad: Programming Language
+          </div>
+          <div>
+            <b class="italic-text">* CSE 8/7345 Grad: Advanced Application Programming
+          </div>
+          <div>
+            <b class="italic-text">* CSE 8/7320 Grad: Artificial Intelligence
+          </div>
+          <div>
+            <b class="italic-text">* CSE 8/7347 Grad: XML and the Enterprise
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>Feb 2018 - Mar 2018</span>
+        <div class="content">
+          <h3>Image Classification Algorithm Analysis - Course Project</h3>
+          <div>
+              <b class="italic-text">
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>Nov 2017 - Jan 2018</span>
+        <div class="content">
+          <h3>Wireless Sensor Network Modeling - Course Project</h3>
+          <div>
+              <b class="italic-text">
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>Aug 2017</span>
+        <div class="content">
+          <h3>Started Master of Computer Science - Southern Methodist University</h3>
+        </div>
+      </li>
+      <li>
+        <span>May 2017</span>
+        <div class="content">
+          <h3>Graduated Bachelor of Software Engineering - Qingdao University</h3>
+        </div>
+      </li>
+      <li>
+        <span>Feb 2017 - Sept 2017</span>
+        <div class="content">
+          <h3>Road Construction Management App - Android Developer @ City Construction Company</h3>
+          <div>
+              <b class="italic-text">* Company: The largest public construction company in my hometown Qingdao with 91 million dollars total assets
+          </div>
+          <div>
+            <b class="italic-text">* Users: 10+ construction teams and supervisors
+          </div>
+          <div>
+            <b class="italic-text">* Functions: Draw lines or marks and pin icons of machine or labor on a 2D map API(Baidu Map API); update each operation and status of machine or labor then calculate and report daily cost in analytic plots; with different four types of permissions accessing individually
+          </div>
+          <div>
+            <b class="italic-text">* Duties: Implemented layouts, activities, customized widgets, screen adaption, data synchronization and HTTP request/respond between server and users based on Java
+          </div>
+          <div>
+            <b class="italic-text">* Gains: SVN Version control, How to customize widget, UML is important, Debugging and testing, Prototype Demo Tool is a saver to know client's demand better, code/material reusability, comment is important
+          </div>
+          <div>
+            <b class="italic-text">* Self assessment: Fresh try in Android after academic classes, having fun and learning stuffs. Switching between Google and coding all the time, however make it work finally anyway. It doesn't look professionally pretty in graphic, but it works functionally well and indeed saves money for the company
+          </div>
+        </div>
+      </li>
+      <li>
+        <span>2016</span>
+        <div class="content">
+          <h3>Preparing TOFEL and GRE to study in the US</h3>
+        </div>
+      </li>
+      <li>
+        <span>Oct 2015</span>
+        <div class="content">
+          <h3>1st Cash Prize of Hackthon - Sponsored School Event</h3>
+        </div>
+      </li>
+      <li>
+        <span>May 2015 - May 2016</span>
+        <div class="content">
+          <h3>Remote Sensing Image Processing for City Planning - Lab Collaboration</h3>
+        </div>
+      </li>
+      <li>
+        <span>Apr 2015</span>
+        <div class="content">
+          <h3>2nd Coding Challenge - National Coding Challenge</h3>
+        </div>
+      </li>
+      <li>
+        <span>May 2014 - May 2015</span>
+        <div class="content">
+          <h3>Remote Sensing Image Processing for Coastline Extraction - Lab Collaboration</h3>
+        </div>
+      </li>
+      <li>
+        <span>Aug 2013</span>
+        <div class="content">
+          <h3>Started Bachelor of Software Engineering - Qingdao University</h3>
+        </div>
+      </li>
+    </ul>
   </div>
+</body>
+</html>
