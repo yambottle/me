@@ -13,11 +13,19 @@ $font-size: 10pt;
 }
 
 .space-between {
-    display: flex; justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
-.content-padding-left{
-    padding-left: 1.5*$font-size;
+.exp-content {
+    // padding-left: 1.5*$font-size;
+    padding-left: 0;
+}
+
+.exp-content ul {
+    padding: 0;
+    margin-left: 1rem;
+    margin-bottom: 0;
 }
 
 .bold-text {

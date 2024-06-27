@@ -14,7 +14,7 @@ title: Raw Resume
             <div class="inline-block">{{site.location}}</div> |
             <div class="inline-block"><a href="{{site.linkedin}}"><b>LinkedIn</b></a></div> |
             <div class="inline-block"><a href="{{site.github}}"><b>Github</b></a></div> |
-            <div class="inline-block"><a href="{{site.website}}"><b>Website</b></a></div>
+            <div class="inline-block"><a href="{{site.website}}"><b>Technical</b></a></div>
         </div>
     </div>
     <hr>
@@ -37,14 +37,39 @@ title: Raw Resume
     <div>
         <h5>Experience</h5>
         <div class="space-between bold-text">
-            <div>Software Engineer(DevOps)</div>
+            <div>DevOps Engineer</div>
             <div>July 2021 - Present</div>
         </div>
-        <div class="space-between italic-text">
-            <div>DataJoint - Science Operation for Neuroscience. [<a href="https://github.com/datajoint">Open-source</a>] and [<a href="https://datajoint.com/works">Commercial</a>]</div>
+        <div class="space-between">
+            <div><b>DataJoint</b> - <span class="italic-text">Provide science operation for neuroscience research.</span></div>
             <div>Houston, TX</div>
         </div>
-        <div class="content-padding-left">
+        <div class="exp-content">
+            <ul>
+                <li><b>DataJoint Works</b> - <span class="italic-text">A SaaS platform to empower scientists to design and operate data pipelines for their experiments and analysis in a more efficient, scalable, valid and reproducible way.</span> [<a href="https://datajoint.com/works">Details</a>]</li>
+                <ul>
+                    <li>Administrated DataJoint's and several other customers' <b>AWS</b> account with <b>IoC</b> concept using <b>Terraform</b> and <b>boto3</b>.</li>
+                    <li>Configured VPC, Subnet, IAM, S3, EFS, EC2, RDS, Lambda, SQS, SNS, SES, CloudWatch, Route 53 and Secrets Manager.</li>
+                    <li>Provisioned and maintained production and QA <b>Kubernetes</b> clusters with <b>kOps</b> and <b>helm</b>.</li>
+                    <li>Architected and implemented ephemeral computational cluster with <b>Packer</b> and <b>Terraform</b> to support <b>CPU</b> and <b>GPU</b> usage.</li>
+                    <li>Developed <b>CI/CD</b> pipelines with <b>Github Actions</b> starter and reusable workflows to automate build, test and deployment.</li>
+                    <li>Integrated <b>Jupyterhub</b> and kernel gateway as part of the <b>internal developer portal</b>.</li>
+                    <li>Implemented customer onboarding API with <b>Flask</b>, <b>SQL</b>, <b>bash</b>, <b>boto3</b> and <b>Terraform</b> to automate infrastructure provisioning.</li>
+                    <li>Introduced <b>OpenTelemetry</b> to the team and integrated observability with <b>CloudWatch</b>, <b>Datadog</b> and <b>LGTM stacks(Grafana)</b>.</li>
+                    <li>Implemented <b>single single-on</b>, <b>role-based access control</b>, <b>secret manager</b>, <b>vulnerability scan</b> for security compliance.</li>
+                    <li>Collaborated with the team in <b>Agile</b> approach using <b>Jira</b> and <b>Confluence</b>, also used <b>Github Project</b> for open-source projects.</li>
+                </ul>
+                <li><b>DataJoint Core/Elements</b> - DataJoint Core is an open-source toolkit for defining and operating computational data pipelines. DataJoint Elements is a collection of pre-assembled modules for neuroscience pipelines. [<a href="https://github.com/datajoint">Github</a>]</li>
+                <ul>
+                    <li>Collaborated with internal scientists to standardize the support of <b>Matlab</b> and <b>GPU</b> for several workflows.</li>
+                    <li>Implemented <b>dev container</b> for <b>open-source</b> repositories to allow any collaborators to work on Github Workspace.</li>
+                    <li>Integrated <b>mkdocs</b> to improve documentation development efficiency and reader experience.</li>
+                </ul>
+                <!-- style="list-style-type: none;" -->
+                <li class="italic-text">DataJoint Works, Core and Elements improve research efficiency of 10+ neuroscience labs as of this moment. My contribution technically improves DataJoint Works' robustness, flexibility and scalability, also automated manual toil through internal and external collaboration to improve the productivity in both commercial and open-source development. </li>
+            </ul>
+        </div>
+        <!-- <div class="exp-content">
             <div>
                 <b class="italic-text">* AWS:</b> Administrated DataJoint's AWS account and several other customers' AWS accounts. Configured <b>VPC</b>, <b>Subnet</b>, <b>Security Groups</b>, <b>IAM</b> role and policies, <b>S3</b> lifecycle management, <b>EFS</b> access point, <b>EC2</b> instances, <b>RDS</b> instances, <b>Lambda</b> triggered by <b>SQS</b> or <b>EventBridge</b>, <b>SNS</b> and <b>SES</b>, <b>CloudWatch</b> metrics and alarms, <b>Route 53</b> DNS records, <b>Secrets Manager</b> for deployment secrets.
             </div>
@@ -72,18 +97,33 @@ title: Raw Resume
             <div>
                 <b class="italic-text">* MySQL Database:</b> Maintained a self-hosted <b>Percona XtraDB Clusters</b> on database <b>daily backup</b> stored on <b>S3</b>, <b>mysqldump</b> backup redundancy, Point-in-Time Recovery(<b>PITR</b>), <b>deadlock</b> detection, and slow query log. 
             </div>
-        </div>
+        </div> -->
         <!-- <br> -->
 
         <div class="space-between bold-text">
             <div>Software Engineer(MLOps)</div>
             <div>May 2019 - July 2021</div>
         </div>
-        <div class="space-between italic-text">
-            <div>dataVediK - Optimize Oil & Gas operations by Machine Learning. [<a href="https://www.agoraiot.com/marketplace/drillvedik">DrillVedik</a>]</div> <!--[<a href="https://yambottle.github.io/me/more.html#datavedik">Details</a>]-->
+        <div class="space-between">
+            <div><b>dataVediK</b> - <span class="italic-text">Optimize oil and gas operations by machine learning.</span></div>
             <div>Houston, TX</div>
         </div>
-        <div class="content-padding-left">
+        <div class="exp-content">
+            <ul>
+                <li><b>Hyper-converged Data Analysis Platform</b> - <span class="italic-text">An SaaS platform integrated data management, machine learning and data analytic services for oil and gas.</span> [<a href="https://www.agoraiot.com/marketplace/drillvedik">DrillVedik</a>]</li>
+                <ul>
+                    <li>Implemented <b>CI/CD</b> pipelines with <b>Azure DevOps</b> and <b>Jenkins</b> for build, test, validation and deployment.</li>
+                    <li>Integrated <b>MLflow</b> as machine learning operational pipeline to improve model comparison, versioning and serving.</li>
+                    <li>Set up <b>Airflow</b> to automate data processing pipeline.</li>
+                    <li>Developed DrillVedik interactive drilling analytic dashboard with <b>Plotly Dash</b>, <b>Flask</b> and <b>Redis</b>.</li>
+                    <li>Architected and developed full stack of the prediction task manager web application with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Flask</b>, <b>Celery</b>, <b>RabbitMQ</b>, <b>gunicorn</b>, <b>nginx</b>.</li>
+                    <li>Analyzed drilling pump operation data and trained multiple machine learning models to <b>classify</b> drilling status.</li>
+                    <li>Researched and applied feature engineering on drilling sensor data, trained a <b>regression</b> model for drilling speed prediction.</li>
+                </ul>
+                <li class="italic-text">Although this was a MVP project, I have learned and practiced varieties of hands-on skills from software development and deployment, machine learning to cloud computing. Also inspired me about the importance of DevOps through the collaboration.</li>
+            </ul>
+        </div>
+        <!-- <div class="exp-content">
             <div>
                 <b class="italic-text">* Interactive Drilling Dashboard: </b>This is an <b>enterprise</b> product that I worked with two more engineers. Developed a <b>Plotly Dash</b> dashboard that visualizes processed data using Bootstrap, CSS media query, <b>Redis</b> and sqlalchemy. Also, implemented a <b>socket</b> service will notify when <b>Airflow</b> pipeline finished processing in order to <b>synchronize</b>(refresh) the dashboard's data.
             </div>
@@ -105,7 +145,7 @@ title: Raw Resume
             <div>
                 <b class="italic-text">* Drilling Speed Prediction: </b>Working with a domain expert, applied Gaussian Process <b>Regression</b> for feature synthesis based on geographical information as well as <b>feature engineering</b> based on correlation matrix and F1 score ranking, built a non-linear regression model using LSTM RNN.
             </div>
-        </div>
+        </div> -->
     </div>
     <hr>
 
