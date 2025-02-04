@@ -1,4 +1,4 @@
-# Drew Yang's Github Page - WIP
+# Drew Yang's Github Page
 
 ![Release Resume](https://github.com/yambottle/me/actions/workflows/publish-pdf.yml/badge.svg)
 
