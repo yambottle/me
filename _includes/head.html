@@ -29,4 +29,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
 </head>

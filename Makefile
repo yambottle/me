@@ -5,6 +5,9 @@ launch:
 # Local build the website
 build:
 	jekyll build
+# Test Google Analytics
+build-prod:
+	JEKYLL_ENV=production jekyll build
 # Generate pdf files
 pdf:
 	bash ${PWD}/bin/pdf-product2.sh
